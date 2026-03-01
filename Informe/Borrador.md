@@ -14,8 +14,3 @@ Se tomó una señal de rampa como señal de entrada con magnitud máxima de 5 y 
 
 ### Señal Cuadrada
 Y para finalizar con los ensayos del bloque diferenciador, la señal constante fue cambiada por una señal cuadrada de magnitud 1. Lo que pudimos notar en la gráfica Fig. 7 es que en la salida aparecieron dos picos muy claros: uno positivo al principio y otro negativo al final del pulso. El primer pico ocurre porque, cuando la señal arranca, pasa de 0 a 1 de golpe, y como nuestro código resta el valor actual menos el anterior, el resultado es 1 positivo. El segundo pico toma valores negativos ya que se da cuando el pulso termina y la señal vuelve a cero; ahí la operación es al revés (0 - 1), lo que nos da el -1 que se ve hacia abajo. Básicamente, estos picos nos sirven para identificar exactamente los bordes o "flancos" de la señal, avisándonos justo cuando empieza y cuando termina cada pulso de la señal de entrada.
-
----
-
-## IV. CONCLUSIONES
-* Se verificó que el bloque diferenciador identifica con precisión los flancos o transiciones de las señales digitales mediante la generación de picos de magnitud proporcional al cambio de nivel, demostrando su capacidad para transformar rampas en niveles de voltaje constantes.
